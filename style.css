@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bangers&family=Carter+One&family=Fugaz+One&family=Homemade+Apple&family=Sofia&family=Yatra+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.cursor{
+    height: 25px;
+    width: 25px;
+    /* background-color: #fff; */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    z-index: 100;
+    mix-blend-mode: difference;
+    box-shadow: 0px 0px 10px #fff;
+}
+#main{
+    background-color: #141214;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #111; */
+    position: relative;
+}
+header .video{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.header-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #111; */
+    /* background-color: #11111100; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.header-content img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /* top: -50%;
+    left: -50%; */
+}
+.header-content .content{
+    /* background-color: orange;     */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content .content h1{
+    color: transparent;
+    /* color: #fff; */
+    font-size: 10vw;
+    width: 70%;
+    text-align: center;
+    font-family: "Sofia", cursive;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -2px;
+    /* background-color: red; */
+}
+
+.ramzan-info {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #141214; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ramzan-info > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 35px;
+}
+
+.ramzan-info h1 span {
+    /* color: transparent; */
+    opacity: 0;
+    margin: 5px 5px;
+    /* background-color: red; */
+}
+
+.ramzan-parts{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #141214; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+.ramzan-parts .elem{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    font-family: "Sofia", cursive;
+    align-items: center;
+    color: #fff;
+}
+.ramzan-parts .elem img{
+    height: 50px;    
+    width: 80px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.ramzan-end{
+    height: 60vh;
+    width: 100%;
+    /* background-color: #141214; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ramzan-end h1{
+    color: #fff;
+    font-family: "Sofia", cursive;
+    text-align: center;
+    width: 30%;
+    font-size: 40px;
+    overflow: hidden;
+}
+.ramzan-end h1 span{
+    display: inline-block;
+    transform: translateY(200%);
+}
+
+.eid{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.eid video{
+    height: 80%;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 50px;
+    opacity: 0;
+}
+.eid button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: "Sofia", cursive;
+    color: #fff  ;
+    font-size: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+.eid button span{
+    position: relative;
+    z-index: 8;
+}
+.eid button:hover{
+    color: #fff;
+    border-color: #141214;
+}
+.eid button:hover::before{
+    top: 0;
+}
+.eid button::before{
+    transition: all ease 0.4s;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #141214;
+    border-radius: 50px;
+    z-index: 5;
+}
+
+.eid-info {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #141214; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eid-info > h1 {
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 50px;
+}
+.eid-info h1 span{
+    opacity: 0;
+}
+
+@media (width <= 662px) {
+    .header-content img{
+        height: 150px;
+        width: 150px;
+    }
+    .ramzan-info > h1 {
+        font-size: 25px;
+    }
+    .ramzan-end h1{
+        width: 65%;
+        font-size: 40px;
+    }
+    .eid video{
+        width: 85%;
+    }
+    .eid-info > h1 {
+        font-size: 50px;
+        width: 90%;
+        font-size: 70px;
+    }
+}
+
+@media (width <= 478px) {
+    .header-content img{
+        height: 200px;
+        width: 200px;
+        left: 10%;
+    }
+    .header-content .content h1{
+        font-size: 15vw;
+        width: 85%;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+    .ramzan-info > h1 {
+        font-size: 20px;
+        width: 90%;
+    }
+    .ramzan-end h1{
+        width: 65%;
+        font-size: 40px;
+    }
+    .eid video{
+        width: 90%;
+        height: 60%;
+    }
+    .eid-info > h1 {
+        width: 90%;
+        font-size: 55px;
+    }
+}
+
+@media (width <= 340px) {
+    .header-content img{
+        height: 200px;
+        width: 200px;
+        left: -35%;
+        top: 30%;
+    }
+    .header-content .content h1{
+        font-size: 20vw;
+        width: 85%;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+    .ramzan-info > h1 {
+        font-size: 20px;
+        width: 90%;
+    }
+    .ramzan-end h1{
+        width: 80%;
+        font-size: 40px;
+    }
+    .eid video{
+        width: 90%;
+        height: 60%;
+    }
+    .eid-info > h1 {
+        width: 90%;
+        font-size: 50px;
+    }
+}
